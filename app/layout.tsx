@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Open_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
+import ThemeProvider from "@/context/Theme";
 
 const openSans = Open_Sans({
   variable: "--font-geist-sans",
@@ -27,7 +28,14 @@ export default function RootLayout({
       <body
         className={`${openSans.className} ${spaceGrotesk.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
