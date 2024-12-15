@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Open_Sans, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import ThemeProvider from "@/context/Theme";
-import Navbar from "@/components/navigation/navbar";
 
 const openSans = Open_Sans({
   variable: "--font-geist-sans",
@@ -35,7 +34,6 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
           {children}
         </ThemeProvider>
       </body>

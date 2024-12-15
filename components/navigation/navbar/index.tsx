@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Theme from "./Theme";
+import Search from "@/components/search/Search";
 
 const Navbar = () => {
   return (
@@ -19,7 +20,12 @@ const Navbar = () => {
         </p>
       </Link>
 
-      <p>Global Search</p>
+      <Search
+        route="/"
+        imgSrc="/icons/search.svg"
+        placeholder="Search publications..."
+        otherClasses="flex-1"
+      />
 
       <div className="flex-between gap-5">
         <Theme />
