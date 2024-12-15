@@ -11,7 +11,7 @@ const config: Config = {
     extend: {
       colors: {
         primary: {
-          "100": "#FFF1E6",
+          "100": "#E96701",
           "500": "#FF7000",
         },
         dark: {
@@ -58,6 +58,8 @@ const config: Config = {
       },
     },
   },
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("tailwindcss-animate")],
 };
 
 export default config;
