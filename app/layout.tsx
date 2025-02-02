@@ -34,6 +34,8 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <div className="gradient" />
+
           {children}
         </ThemeProvider>
       </body>

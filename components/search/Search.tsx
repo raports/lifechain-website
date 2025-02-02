@@ -51,7 +51,7 @@ const Search = ({ route, placeholder, otherClasses }: Props) => {
 
   return (
     <div
-      className={`background-light800_darkgradient flex min-h-[56px] grow items-center gap-4 rounded-[10px] px-4 ${otherClasses}`}
+      className={`background-light900_dark200 flex min-h-[42px] grow items-center gap-2 rounded-2 px-4 ${otherClasses}`}
     >
       <MagnifyingGlassIcon width={24} height={24} className="cursor-pointer" />
 
